@@ -5,7 +5,6 @@ const FormSignup = () => {
    <div className='form-content-right'>
        <form className='form'>
            <h1>Get started with us today! Create your account by filling out your information below</h1>
-       </form>
        <div className='form-inputs'>
            <label htmlFor='username' 
            className='form-label'>
@@ -20,19 +19,6 @@ const FormSignup = () => {
             />
        </div>
         <div className='form-inputs'>
-           <label htmlFor='password'
-           className='form-label'>
-            password
-            </label>
-            <input 
-            id='password'
-            type='password'
-            name='password'
-            className='form-input'
-            placeholder='Enter your password'
-            />
-       </div>
-        <div className='form-inputs'>
            <label htmlFor='email'
            className='form-label'>
             Email
@@ -44,7 +30,29 @@ const FormSignup = () => {
             className='form-input'
             placeholder='Enter your email'
             />
+        </div>
+        <div className='form-inputs'>
+           <label htmlFor='password2'
+           className='form-label'>
+            Confirm password
+            </label>
+            <input 
+            id='password2'
+            type='password2'
+            name='password2'
+            className='form-input'
+            placeholder='Enter your password2'
+            />
        </div>
+       <button className='form-input-btn'
+       type='submit'>
+           Sign up
+       </button>
+       <span className='form-input-login'>
+           Already have an account? Login <a
+           href='#'>here</a>
+       </span>
+       </form>
    </div>
     )
 }
